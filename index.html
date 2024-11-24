@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+         <a class="logo" href="#">One Piece<span></span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About One Piece</a></li>
+          <li><a href="#">Characters</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>Navigate the World of One Piece: Sail with the Straw Hat Pirates!</h2>
+        <p>
+          Embark on an unforgettable adventure as you join the Straw Hat Pirates 
+          on their epic journey across the Grand Line. From thrilling battles to 
+          uncovering hidden treasures, the world of One Piece is filled with endless 
+          excitement, mystery, and camaraderie. With Luffy at the helm, you'll explore 
+          uncharted islands, form unbreakable bonds, and chase the legendary One Piece. 
+          Whether you're a seasoned fan or new to the world of pirates, the voyage to becoming 
+          the Pirate King starts here. Set sail, and let your adventure begin!
+        </p>
+        <button>Let's Go!</button>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+    <footer>  
+      <p>© 2024 Mark Gerald Galindes. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
